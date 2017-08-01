@@ -1,0 +1,30 @@
+/*搜索结果页面*/
+.search_nr01{width:100%; height:125px; float:left; background:#f4f4f4;}
+.search_nr02{width:140px; height:44px; float:left; padding-left:58px; margin-top:36px;}
+.search_nr02 img{width:140px; height:44px;}
+.search_nr03{width:610px; background:#fff; margin-top:32px; float:left; margin-left:40px; _display:inline;}
+.search_nr03 .li_01{width:523px; height:42px; float:left; border:1px solid #c0bebe;}
+.search_nr03 .li_01 input{color:#b8b8b8;}
+.search_nr03 .li_02{width:523px; height:42px; float:left; border:1px solid #e72626;}
+.search_nr03 .li_02 input{color:#333;}
+.search_nr03 .input_text{width:510px; height:20px; line-height:20px; border:0px; background:none; float:left; vertical-align:middle; padding:12px 5px; font-size:14px;}
+.search_nr03 .button{width:85px; height:44px; line-height:44px; text-align:center; background:#d50202 url(../images/search_anniu.png) no-repeat 28px 10px; color:#fff; text-align:center; cursor:pointer; padding:0px; margin:0px; border:1px solid #dc360f; _border:0px; _height:46px; _line-height:46px;}
+.search_nr03 .button:hover{background:#e72626 url(../images/search_anniu.png) no-repeat 28px 10px; text-decoration:none;}
+.search_nr04{height:42px; line-height:42px; float:left; color:#333; font-size:14px; margin-top:32px; padding-left:10px;}
+.search_nr04 a{color:#333;}
+.search_nr05{width:600px; padding-left:238px; float:left;}
+.search_nr06{width:600px; float:left; line-height:20px; margin-top:7px; color:#666; font-size:12px;}
+.search_nr06 em{color:#cc0000; font-style:normal; font-weight:normal;}
+.search_nr07{width:600px; float:left; padding-bottom:12px; margin-top:10px;}
+.search_nr07 .t{width:100%; float:left;font-size:medium; line-height:30px; font-weight:normal; margin-bottom:1px; text-decoration:underline; font-size:16px; word-break:break-all; word-wrap:break-word;}
+.search_nr07 .t a{color:#0000cc;}
+.search_nr07 .t em{color:#c00; font-style:normal;}
+.search_nr07 .nrxx{width:100%; float:left;}
+.search_nr07 .slt_pic{width:115px; height:72px; float:left;}
+.search_nr07 .slt_pic img{width:105px; height:78px;}
+.search_nr07 .ul_bfb{width:100%; float:left;}
+.search_nr07 .ul_485{width:485px; float:left;}
+.search_nr07 .c_abstract{display:block; font-size:13px; line-height:20px; word-break:break-all; word-wrap:break-word;}
+.search_nr07 .c_abstract em{color:#229022;}
+.search_nr07 .riqi{display:block; line-height:20px; color:#008000; word-break:break-all; word-wrap:break-word;}
+.search_nr08{width:100%; float:left; padding:15px 0px; line-height:30px; color:#959595;}

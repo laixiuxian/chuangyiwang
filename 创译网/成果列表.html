@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人中心(1)无信箱情况(1)</title>
+<script type="text/javascript" src="js/jquery1_11_1min.js"></script>
+<script type="text/javascript" src="js/gongxiang.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6png.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="width_100bfb">
+<div class="top_div l">
+<ul>
+<div class="title2">中关村协同创新服务平台</div>
+<div class="sm_nav">
+<ul>
+<li><a href="javascript:void(0);">登录</a></li>
+<li><a href="reg.html">注册</a></li>
+<li><a href="user_center.html" class="xlcd">我的创驿</a>
+<ul>
+<p class="p_01">
+<a href="user_01.html">主人态</a>
+<a href="user_keren.html">客人态</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿客服</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿导航</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);">收藏创驿</a></li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--LOGO和搜索等-->
+<div class="wid_1000px">
+<div class="header_nr">
+<div class="lgoo"><a href="index.html"><img src="images/logo.png" /></a></div>
+<div class="header_search">
+<form>
+<li class="li_01">
+<input type="text" class="input_text" onblur="if(this.value=='') this.value='请输入查询内容';this.parentNode.className='li_01';" onfocus="this.parentNode.className='li_02';if(this.value=='请输入查询内容') this.value='';" value="请输入查询内容" />
+</li>
+<li class="r">
+<input type="button" class="button f16 r" value="" />
+</li>
+</form>
+</div>
+<div class="header_erweima"><img src="images/erweima.png" /><span></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--头部结束内容开始-->
+<div class="wid_1000px">
+<div class="user_nr01">
+<li><a href="#" class="this">我的主页</a></li><li><a href="#">个人资料</a></li><li><a href="#">帮助</a></li>
+</div>
+<div class="clear"></div>
+</div>
+<div class="wid_1000px">
+<div class="user_nr02">
+<div class="width_100bfb01">
+<div class="user_tx01">
+<ul class="ul_01" onmouseover="gong_show('xgzl_id')" onMouseOut="gong_hide('xgzl_id')">
+<img src="images/ad_06.png" />
+<a href="javascript:void(0);" onclick="tanchu_login('touxiang_01','touxiang_02')" class="xgzl" id="xgzl_id">修改头像</a>
+</ul>
+<ul class="ul_02">
+<li class="li_01"><p>伊伊能靜能靜能</p><span></span><!--企业认证<span class="this"></span>--></li>
+<li class="li_02 mt15"><b class="ico_01"></b>To be or not to be , that's a question .</li>
+<li class="li_02"><b class="ico_02"></b>单身，1999年9月9日，射手座</li>
+<li class="li_02"><b class="ico_03"></b>现居：北京市，朝阳区</li>
+<li class="li_03">
+<p class="p_01">资料完成度：</p>
+<p class="p_02"><span class="wcbfb">30%</span><span class="wcbl" style="width:30%;"></span></p>
+<p class="wszlxx"><a href="user_keren.html">完善资料>></a></p>
+</li>
+</ul>
+</div>
+<div class="user_rzztxx01">
+<ul class="ul_04">
+<li><a href="geren_shenqing.html">备案申请</a></li>
+<li><a href="javascript:void(0);" onclick="tanchu_login('xuqiudengji_01','xuqiudengji_02');">需求登记</a></li>
+<li><a href="qiye_shenqing.html">服务填报</a></li>
+<li><a href="#">发布技术成果>></a></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#jishuchengguo,#xx_sjx,#xx_fjx,#xx_cgx').duoxuan();
+});
+function showhidediv(id){
+document.getElementById(id).style.display = document.getElementById(id).style.display=='none'?'':'none';
+}
+</script>
+<div class="user_jscg01">
+<div class="width_100bfb01">
+<ul class="title"><li class="l">我的技术成果<li></ul>
+</div>
+<div class="user_jscgxz" id="jishuchengguo">
+<ul class="ul_01" onmouseover="showhidediv('jscg_01')" onmouseout="showhidediv('jscg_01')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_01"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_02')" onmouseout="showhidediv('jscg_02')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_02"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_03')" onmouseout="showhidediv('jscg_03')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_03"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_04')" onmouseout="showhidediv('jscg_04')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_04"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_05')" onmouseout="showhidediv('jscg_05')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_05"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_06')" onmouseout="showhidediv('jscg_06')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_06"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_07')" onmouseout="showhidediv('jscg_07')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_07"><a href="#">删除</a></li>
+</ul>
+<ul class="ul_01" onmouseover="showhidediv('jscg_08')" onmouseout="showhidediv('jscg_08')">
+<li class="l pl_5"><input type="checkbox" value='1' name="jscg_name" /><label></label></li>
+<li class="li_01">
+<a href="技术成果详细.html">
+【01469955】LED单芯片驱动电源及高效节能灯泡
+</a>
+</li>
+<li class="li_02">[2014-07-30]  20:36:59</li>
+<li class="li_03 r" style="display:none;" id="jscg_08"><a href="#">删除</a></li>
+</ul>
+<ul>
+<input type="checkbox" name="jscg_name" /><label data="all" style="float:left; margin-left:5px; _display:inline;">全选</label>
+<li class="li_03 l pl_10"><a href="#" title="删除所选">删除</a></li>
+</ul>
+</div>
+<div class="pagination">
+<span class="disabled">首页</span>
+<span class="disabled">上一页</span>
+<span class="active">1</span>
+<a href="#">2</a><a href="#">3</a>
+<a href="#">4</a><a href="#">5</a>
+<a href="#">6</a><a href="#">7</a>
+<a href="#">8</a>
+<span class="disabled">...</span>
+<a href="#">18</a><a href="#">19</a>
+<a href="#" rel="next">下一页</a>
+<a href="#" rel="next">尾页</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<!--内容结束版权开始-->
+<div class="width_100bfb">
+<div class="footer_01">
+<p class="f12 p_01"><a href="#">法律声明</a>\<a href="#">关于我们</a>\<a href="#">联系我们</a>\<a href="#">意见反馈</a></p>
+<p class="f10">Copyright©2005-2014 YIZHAN.CN All Rights Reserved 创驿网</p>
+<p class="f10">京ICP证080047号[京ICP备08010314号-6] 文网文[2009]024号 新出网证（京）字069号 京公网安备110000000006号 工商营业执照</p>
+</div>
+<div class="clear"></div>
+</div>
+<!--返回顶部-->
+<div id="fanhui_top">
+<ul>
+<li id="fanhui_top_02">
+<a id="totop" title="返回顶部"></a>
+</li>
+</ul>
+</div>
+<!--弹出修改头像-->
+<div id="touxiang_01" class="tanchu_divzz"></div>
+<div id="touxiang_02" class="touxiang_xg01">
+<form action="">
+<div class="touxiang_xg02"><li class="guanbi" title="关闭窗口" onclick="guanbi_div('touxiang_01','touxiang_02')"></li></div>
+<div class="touxiang_xg03">请上传头像哦^ ^</div>
+<div class="width_100bfb01">
+<div class="touxiang_xg04">
+<ul>
+<input type="hidden"  id="upfileResult" />
+<input style="display:none;" name="touxingwb" id="touxingwb" type="file" onchange="document.getElementById('upfileResult').value=this.value;img_shangchuan();"/>
+<input type="button" class="sctx_user" value="上传头像" style="margin-top:60px;" onclick="document.getElementById('touxingwb').click()" />
+<span class="shuoming mt10">仅支持jpg，jpge，gif，bmp，<br />png格式，最大文件量4mb</span>
+</ul>
+</div>
+<div class="touxiang_xg05">
+<div class="touxiang_xg06">
+<ul class="datu" id="iedatu_180"><img id="datu_180" width=-1 height=-1 style="diplay:none" /></ul>
+<ul class="shuoming">大尺寸180*180<br />请注意中小尺寸头像是否清晰</ul>
+</div>
+<!--大图结束-->
+<div class="touxiang_xg07">
+<ul class="zhongtu" id="iedatu_50"><img id="datu_50" width=-1 height=-1 style="diplay:none" /></ul>
+<ul class="shuoming">50*50</ul>
+<ul class="xiaotu" id="iedatu_24"><img id="datu_24" width=-1 height=-1 style="diplay:none" /></ul>
+<ul class="shuoming">24*24</ul>
+</div>
+<!--中图小图结束-->
+</div>
+<script type="text/javascript">
+//本JS只做演示使用，具体程序可以看情况来做
+function img_shangchuan() {  
+    var shangchuanObj=document.getElementById("touxingwb");  
+    var imgObjdatu_180=document.getElementById("datu_180");
+	var imgObjdatu_50=document.getElementById("datu_50");
+	var imgObjdatu_24=document.getElementById("datu_24");
+    if(shangchuanObj.files && shangchuanObj.files[0]){  
+        //火狐下，直接设img属性  
+        imgObjdatu_180.style.display = 'block';
+        imgObjdatu_180.style.width = '180px';
+        imgObjdatu_180.style.height = '180px';
+		imgObjdatu_50.style.display = 'block';
+        imgObjdatu_50.style.width = '50px';
+        imgObjdatu_50.style.height = '50px';
+		imgObjdatu_24.style.display = 'block';
+        imgObjdatu_24.style.width = '24px';
+        imgObjdatu_24.style.height = '24px';
+        imgObjdatu_180.src = window.URL.createObjectURL(shangchuanObj.files[0]);
+		imgObjdatu_50.src = window.URL.createObjectURL(shangchuanObj.files[0]);
+		imgObjdatu_24.src = window.URL.createObjectURL(shangchuanObj.files[0]);
+    }else{  
+        //IE下，使用滤镜  
+        shangchuanObj.select();  
+        var imgSrc = document.selection.createRange().text;  
+        var iedatu_180Id = document.getElementById("iedatu_180");
+		var iedatu_50Id = document.getElementById("iedatu_50");
+		var iedatu_24Id = document.getElementById("iedatu_24");
+        //必须设置初始大小  
+        iedatu_180Id.style.width = "180px";
+        iedatu_180Id.style.height = "180px";
+		iedatu_50Id.style.width = "50px";
+        iedatu_50Id.style.height = "50px";
+		iedatu_24Id.style.width = "24px";
+        iedatu_24Id.style.height = "24px";
+        //图片异常的捕捉，防止用户修改后缀来伪造图片  
+        try{  
+            iedatu_180Id.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+            iedatu_180Id.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+			iedatu_50Id.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+            iedatu_50Id.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+			iedatu_24Id.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+            iedatu_24Id.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+        }catch(e){  
+            alert("您上传的图片格式不正确，请重新选择!");  
+            return false;  
+        }  
+        imgObjdatu_180.style.display = 'none';
+		imgObjdatu_50.style.display = 'none';
+		imgObjdatu_24.style.display = 'none';
+        document.selection.empty();
+    }
+    return true;
+}
+</script>
+</div>
+<div class="touxiang_xg08">
+<input type="button" value="保存" class="tijiao baocun" onclick="guanbi_div('touxiang_01','touxiang_02');chenggongtishi()" />
+<input type="button" value="取消" class="tijiao quxiao ml_10" onclick="guanbi_div('touxiang_01','touxiang_02')" />
+</div>
+</form>
+</div>
+<!--修改成功提示-->
+<div id="touxiang_03" class="tanchu_divzz"></div>
+<div id="touxiang_04" class="chongg_tishi01">
+<div class="touxiang_xg02"><li class="guanbi" title="关闭窗口" onclick="guanbi_div('touxiang_03','touxiang_04')"></li></div>
+<div class="chongg_tishi02"><span class="icon_png"></span>恭喜，资料修改成功！</div>
+<div class="chongg_tishi03"><input type="button" class="sctx_user" value="我知道了" onclick="guanbi_div('touxiang_03','touxiang_04')" /></div>
+<script>
+function chenggongtishi()
+{
+tanchu_login('touxiang_03','touxiang_04');
+}
+</script>
+</div>
+<!--弹出需求登录五个按钮-->
+<div id="xuqiudengji_01" class="tanchu_divzz"></div>
+<div id="xuqiudengji_02" class="xuqiudj_01">
+<ul class="xuqiudj_02">
+<li class="li_01">需求登记</li><li onclick="guanbi_div('xuqiudengji_01','xuqiudengji_02')" title="关闭窗口" class="guanbi"></li>
+</ul>
+<ul class="xuqiudj_03 pb_20 mt20">
+<li class="li_01">
+<p class="p_01">实验场所：</p><p class="p_02"><a href="#">实验场所需求信息表</a></p>
+</li>
+<li class="li_01 ml_21px">
+<p class="p_01">服务需求：</p><p class="p_02"><a href="#">服务资源需求信息表</a></p>
+</li>
+</ul>
+<ul class="xuqiudj_03 mt15">
+<li class="li_01">
+<p class="p_01">项目需求：</p><p class="p_02"><a href="#">技术转移项目需求信息表</a></p>
+</li>
+<li class="li_01 ml_21px" style="width:236px;">
+<p class="p_01"></p><p class="p_02"><a href="#">专利权交易项目需求信息表</a></p>
+</li>
+</ul>
+<ul class="xuqiudj_03 pb_50 mt15">
+<li class="li_01">
+<p class="p_02"><a href="#">软件著作权需求信息表</a></p>
+</li>
+</ul>
+</div>
+<!--这里是写私信表单-->
+<div id="sixin_biaodan" class="xuqiudj_01">
+<form action="beian_ok.html" id="sixin_form">
+<ul class="xuqiudj_02">
+<li class="li_01">发私信</li><li onclick="guanbi_div('xuqiudengji_01','sixin_biaodan')" title="关闭窗口" class="guanbi"></li>
+</ul>
+<ul class="user_sixin03 mt20">
+<li class="zdmcxx">标题：</li><li><input type="text" class="input_moren" name="biaoti"></li>
+</ul>
+<ul class="user_sixin03 mt10">
+<li class="zdmcxx">收件人：</li><li><input type="text" class="input_moren" name="shoujianren"></li>
+</ul>
+<ul class="user_sixin03 mt10">
+<li class="zdmcxx">内容：</li><li><textarea class="sixinnr" name="yjneirong"></textarea></li>
+</ul>
+<div class="touxiang_xg08" style="margin-top:20px;">
+<input type="submit" class="tijiao baocun" value="保存">
+<input type="button" onclick="guanbi_div('xuqiudengji_01','sixin_biaodan')" class="tijiao quxiao ml_10" value="取消">
+</div>
+<script type="text/javascript" src="js/form_yz.js"></script>
+<script>
+//表单验证
+		$(function(){
+			var options_array2 = [
+				{ name:"biaoti",type:"text",simple:"标题不能为空",focusMsg:'请输入标题'},
+				{ name:"shoujianren",type:"text",simple:"收件人不能为空",focusMsg:'请输入收件人'},
+				{ name:"yjneirong",type:"text",simple:"内容不能为空",focusMsg:'请输入内容'},
+			];
+			$("#sixin_form").valid({
+				items:options_array2
+			});
+		});
+</script>
+</form>
+</div>
+
+<!--这里是读取技术成果-->
+<div id="shixin_tcnr" class="xuqiudj_01">
+<ul class="xuqiudj_02">
+<li class="li_01">私信详细内容</li><li onclick="guanbi_div('xuqiudengji_01','shixin_tcnr')" title="关闭窗口" class="guanbi"></li>
+</ul>
+<ul style="float:left; padding:10px; line-height:22px; font-size:12px;">
+由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。由路浩集团代理。我勒超级专利转移合同由路浩集团代理。
+</ul>
+</div>
+</body>
+</html>

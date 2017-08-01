@@ -1,0 +1,35 @@
+/*找专家咨询*/
+.zhuanjia_zx01{width:100%; float:left; margin-top:20px;}
+.zhuanjia_zx01 .span_01{width:4px; height:19px; float:left; background-position:0px -43px; margin-top:7px;}
+.zhuanjia_zx01 .more{ float:right; line-height:30px; color:#999; font-size:12px; width:100px; height:30px; background:#d50202; text-align:center;}
+.zhuanjia_zx01 .more a{ color:#fff;}
+.zhuanjia_zx01 .span_02{padding-left:10px; height:30px; line-height:30px; font-size:22px; color:#333; float:left;}
+.zhuanjia_zx01 .span_03{padding-left:10px; height:20px; line-height:20px; font-size:12px; color:#666; float:left; margin-top:10px;}
+.zhuanjia_zx02{width:100%; height:50px; line-height:24px; float:left; overflow:hidden; margin-top:5px;}
+.zhuanjia_zx03{ position:relative; z-index:1; width:308px; float:left; border:1px solid #dbdbdb; margin-left:10px; _display:inline; background:#fff; margin-top:15px; padding:8px; padding-bottom:0px;}
+.zhuanjia_zx03 .ul_01{width:100px; height:130px; float:left; position:relative; z-index:1; overflow:hidden;}
+.zhuanjia_zx03 .ul_01 img{width:100px;}
+.zhuanjia_zx03 .ul_01 .xgzl{width:100px; height:24px; background:url(../images/u108.png) repeat; position:absolute; left:0px; top:106px; text-align:center; line-height:24px; font-size:12px;}
+.zhuanjia_zx03 .ul_01 a{color:#fff; text-decoration:none;}
+.zhuanjia_zx03 .ul_02{float:right; width:196px; height:230px;}
+.zhuanjia_zx03 .ul_02 li{float:left; width:100%;}
+.zhuanjia_zx03 .ul_02 .li_01{line-height:22px; font-size:12px;}
+.zhuanjia_zx03 .zxfw{background:#297dd8; color:#fff; width:100px; height:30px; line-height:30px; text-decoration:none; position:absolute; z-index:5; top:145px; left:8px; text-align:center;}
+.zhuanjia_zx03 .zxfw:hover{background:#3b91e9; text-decoration:none;}
+.zhuanjia_zx04{width:320px; float:left; margin-left:10px; _display:inline;}
+
+.zhao_table{ width:100%; color:#333;border:1px solid #dfdfdf;}
+.zhao_table th{ line-height:40px; font-size:16px; text-align:center;border-right:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; background:#f3f3f3;}
+.zhao_table td{ padding-left:10px; padding-right:10px; line-height:35px; color:#333; text-align:center; border-right:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf;}
+.zhao_table td a{ color:#2f82d8;}
+
+
+
+
+
+
+
+
+
+
+

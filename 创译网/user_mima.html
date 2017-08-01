@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>找回密码</title>
+<script type="text/javascript" src="js/jquery1_11_1min.js"></script>
+<script type="text/javascript" src="js/gongxiang.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6png.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="width_100bfb">
+<div class="top_div l">
+<ul>
+<div class="title2">中关村协同创新服务平台</div>
+<div class="sm_nav">
+<ul>
+<li><a href="javascript:void(0);">登录</a></li>
+<li><a href="reg.html">注册</a></li>
+<li><a href="user_center.html" class="xlcd">我的创驿</a>
+<ul>
+<p class="p_01">
+<a href="user_01.html">主人态</a>
+<a href="user_keren.html">客人态</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿客服</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿导航</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);">收藏创驿</a></li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--LOGO和搜索等-->
+<div class="wid_1000px">
+<div class="header_nr">
+<div class="lgoo"><a href="index.html"><img src="images/logo.png" /></a></div>
+<div class="clear"></div>
+</div>
+<!--头部结束内容开始-->
+<div class="wid_1000px">
+<div class="user_div01 yinying2 mt30">
+<div class="user_zhmima01">
+<span class="icon_png span_01"></span><span class="span_02">找回密码</span>
+</div>
+<form action="user_mima2.html">
+<script type="text/javascript">
+$(document).ready(function(){ 
+$('#zhaohui_fs').danxuan();
+});
+</script>
+<div class="user_zhmima02">
+<ul class="mt12">
+<li class="ys_sj l" id="zhaohui_fs">
+<input name='r' type="radio" value='邮箱找回' checked="checked" />
+<label class="danxuan_Checked" onclick="reg_loginfs('0','login_qhnr',2)">邮箱找回</label>
+<input name='r' type="radio" value='手机找回' /><label onclick="reg_loginfs('1','login_qhnr',2)">手机找回</label>
+</li>
+</ul>
+<ul class="mt20" id="login_qhnr0">
+<li class="l">
+<input class="input_moren" type="text" onblur="if(this.value=='') this.value='请输入注册邮箱'" onfocus="if(this.value=='请输入注册邮箱') this.value='';" value="请输入注册邮箱"  />
+</li>
+</ul>
+<ul class="mt20" id="login_qhnr1" style="display:none;">
+<li class="l">
+<input class="input_moren" type="text" onblur="if(this.value=='') this.value='请输入注册手机号'" onfocus="if(this.value=='请输入注册手机号') this.value='';" value="请输入注册手机号"  />
+</li>
+</ul>
+<ul class="mt20 ljzh_ul">
+<input type="submit" class="ljzh" value="立即找回" />
+</ul>
+</div>
+</form>
+</div>
+<div class="clear"></div>
+</div>
+<!--内容结束版权开始-->
+<div class="width_100bfb">
+<div class="footer_01">
+<p class="f12 p_01"><a href="#">法律声明</a>\<a href="#">关于我们</a>\<a href="#">联系我们</a>\<a href="#">意见反馈</a></p>
+<p class="f10">Copyright©2005-2014 YIZHAN.CN All Rights Reserved 创驿网</p>
+<p class="f10">京ICP证080047号[京ICP备08010314号-6] 文网文[2009]024号 新出网证（京）字069号 京公网安备110000000006号 工商营业执照</p>
+</div>
+<div class="clear"></div>
+</div>
+<!--返回顶部-->
+<div id="fanhui_top">
+<ul>
+<li id="fanhui_top_02">
+<a id="totop" title="返回顶部"></a>
+</li>
+</ul>
+</div>
+</body>
+</html>

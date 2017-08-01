@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>错误提示</title>
+<script type="text/javascript" src="js/jquery1_11_1min.js"></script>
+<script type="text/javascript" src="js/gongxiang.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6png.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+<Meta http-equiv="Refresh" Content="3; Url=http://www.baidu.com">
+<script language="javascript">
+var nn_fanhui = 2;
+function num_fhxx()
+{
+ document.getElementById("nuber_fh").innerHTML = nn_fanhui;
+ nn_fanhui --;
+}
+function SetNum_fanhui()
+{
+ setInterval("num_fhxx()",1000);
+}
+SetNum_fanhui();
+</script>
+</head>
+<body>
+<div class="wid_1000px">
+<div class="user_div02 yinying2 mt30">
+<div class="beian_sb04">
+<ul class="ul_01cw icon_png"></ul>
+<ul class="ul_02">
+<li class="li_01">错误提示！</li>
+<li class="li_02">操作出错<span id="nuber_fh" class="span_01">3</span>秒钟返回上一页</li>
+<li class="width_100bfb01 mt20">
+<a href="index.html" class="jxsb">反回主页</a><a href="javascript:history.go(-1);" class="fhsy">返回上一页>></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div></body>
+</html>

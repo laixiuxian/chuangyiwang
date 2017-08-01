@@ -1,0 +1,36 @@
+.server_left01{width:170px; float:left; border:1px solid #e4e4e4; background:#fff;}
+.server_left01 ul{width:170px; float:left; height:44px; border-bottom:1px solid #efefef; position:relative; z-index:1;}
+.server_left01 li{width:170px; height:44px; position:absolute; left:0px; top:0px;}
+.server_left01 li:hover{background:#5d9fe3;}
+.server_left01 .this{background:#5d9fe3; color:#fff;}
+.server_left01 .this .qbdzfw{color:#fff; background:url(../images/fuwu_01.png) no-repeat 23px -248px;}
+.server_left01 .this .xzpg{color:#fff; background:url(../images/fuwu_01.png) no-repeat 23px -295px;}
+.server_left01 .this .zscq{color:#fff; background:url(../images/fuwu_01.png) no-repeat 23px -339px;}
+.server_left01 .this .zyjy{color:#fff; background:url(../images/fuwu_01.png) no-repeat 23px -381px;}
+.server_left01 .this .yxqb{color:#fff; background:url(../images/fuwu_01.png) no-repeat 23px -427px;}
+.server_left01 .this .sbjd{color:#fff; background:url(../images/fuwu_01.png) no-repeat 23px -473px;}
+.server_left01 a{width:118px; padding-left:52px; float:left; height:44px; line-height:44px;}
+.server_left01 .qbdzfw{background:url(../images/fuwu_01.png) no-repeat 23px 14px;}
+.server_left01 .qbdzfw:hover{background:url(../images/fuwu_01.png) no-repeat 23px -248px; color:#fff; text-decoration:none;}
+.server_left01 .xzpg{background:url(../images/fuwu_01.png) no-repeat 23px -33px;}
+.server_left01 .xzpg:hover{background:url(../images/fuwu_01.png) no-repeat 23px -295px; color:#fff; text-decoration:none;}
+.server_left01 .zscq{background:url(../images/fuwu_01.png) no-repeat 23px -76px;}
+.server_left01 .zscq:hover{background:url(../images/fuwu_01.png) no-repeat 23px -339px; color:#fff; text-decoration:none;}
+.server_left01 .zyjy{background:url(../images/fuwu_01.png) no-repeat 23px -119px;}
+.server_left01 .zyjy:hover{background:url(../images/fuwu_01.png) no-repeat 23px -381px; color:#fff; text-decoration:none;}
+.server_left01 .yxqb{background:url(../images/fuwu_01.png) no-repeat 23px -164px;}
+.server_left01 .yxqb:hover{background:url(../images/fuwu_01.png) no-repeat 23px -427px; color:#fff; text-decoration:none;}
+.server_left01 .sbjd{background:url(../images/fuwu_01.png) no-repeat 23px -209px;}
+.server_left01 .sbjd:hover{background:url(../images/fuwu_01.png) no-repeat 23px -473px; color:#fff; text-decoration:none;}
+.server_nr01{width:820px; height:228px; float:right; margin-top:12px; position:relative; z-index:1;}
+.server_nr01 .fontzi{position:absolute; left:35px; top:55px; width:535px; font-family:"微软雅黑"; color:#1b569c;}
+.server_nr01 .fontzi font{font-size:40px;  line-height:55px; display:block; font-weight:600; float:left; width:100%;}
+.server_nr01 .fontzi em{font-size:24px; line-height:25px; margin-top:10px; float:left; width:100%;}
+.server_nr01:hover{color:#1b569c;text-decoration:none;}
+.server_nr01 .zxzx{text-decoration:none; border-radius:4px; background:#d60201; color:#fff; padding:10px 20px; float:left; margin-top:12px;}
+.server_nr02{width:958px; float:left; margin-top:12px; background:#fff; border:1px solid #e4e4e4; padding:0px 20px;}
+.server_nr03{width:958px; float:left; margin-top:15px; border-bottom:1px solid #efefef; padding-bottom:15px;}
+.server_nr03 li{float:left; font-size:14px; cursor:pointer; padding:0px 15px;}
+.server_nr03 .this{height:34px; line-height:34px; background:#96bce3; color:#fff; border-radius:3px;}
+.server_nr03 .moren{height:16px; line-height:16px; border-right:1px solid #dedede; color:#333; margin-top:9px;}
+.server_nr04{width:958px; float:left; margin-top:15px; padding-bottom:25px; line-height:28px;}

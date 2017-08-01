@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户注册</title>
+<script type="text/javascript" src="js/jquery1_11_1min.js"></script>
+<script type="text/javascript" src="js/gongxiang.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6png.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="width_100bfb">
+<div class="top_div l">
+<ul>
+<div class="title2">中关村协同创新服务平台</div>
+<div class="sm_nav">
+<ul>
+<li><a href="javascript:void(0);">登录</a></li>
+<li><a href="reg.html">注册</a></li>
+<li><a href="user_center.html" class="xlcd">我的创驿</a>
+<ul>
+<p class="p_01">
+<a href="user_01.html">主人态</a>
+<a href="user_keren.html">客人态</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿客服</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿导航</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);">收藏创驿</a></li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--LOGO和搜索等-->
+<div class="wid_1000px">
+<div class="header_nr">
+<div class="lgoo">
+<li><a href="index.html"><img src="images/logo.png" /></a></li>
+<li class="reg">注册</li>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<!--头部结束内容开始-->
+<div class="wid_1000px">
+<div class="user_reg01 yinying2">
+<div class="user_reg02">
+<li class="li_01 li_this"><span class="span_this">01</span><span class="span_smthis">填写账号资料</span></li>
+<li class="li_02"><span class="span_mr">02</span><span class="span_smmoren">激活账号</span></li>
+<li class="li_03"><span class="span_mr"><em class="span_dh"></em></span><span class="span_smmoren">注册成功</span></li>
+</div>
+<form id="reg_form" action="reg_02.html">
+<script type="text/javascript">
+$(document).ready(function(){
+//禁止回车提交
+document.onkeydown = function(ev) {  
+	var target, code, tag;  
+	var ev = ev || window.event;
+	target = ev.srcElement || ev.target;
+		code = ev.keyCode;
+		if (code == 13) {
+			 tag = target.tagName;
+				if (tag == "INPUT") {return false;}
+       	else {return true;}
+       } 
+ };
+$('#xuanzeshenfen').danxuan();
+$('#xieyixinxi').duoxuan();
+$("#dizhi_1,#dizhi_2,#dizhi_3").selectCss_01(); 
+});
+</script>
+<div class="user_reg03">
+<ul class="mt12">
+<li class="li_01">选择身份：</li>
+<li class="shenfen l" id="xuanzeshenfen">
+<input name='r' type="radio" value='个人用户' /><label>个人用户</label>
+<input name='r' type="radio" value='企业用户' /><label>企业用户</label>
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01">用户名：</li>
+<li class="l pl_10">
+<input class="input_moren" type="text" name="user_name" />
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01">密&nbsp;&nbsp;码：</li>
+<li class="l pl_10">
+<input class="input_moren" name="password" type="password" is_password="true" msg="请输入密码，长度在6-20之间" />
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01">确认密码：</li>
+<li class="l pl_10">
+<input class="input_moren" type="password" name="confirm_password" />
+</li>
+</ul>
+</ul>
+<script type="text/javascript" src="js/xz_mail.js"></script>
+<script>
+//选择电子邮箱
+$(function(){
+jq_mail.text_focus("#dianzi_mail input","cur");
+jq_mail.email_suffix("#dianzi_mail input","#mail_houzhui");
+$("#mail_houzhui").click(function() {
+document.getElementById('youxiang').focus();
+})
+});
+</script>
+<ul class="mt12">
+<li class="li_01">电子邮箱：</li>
+<li class="l pl_10" id="dianzi_mail" style="position:relative;">
+<input class="input_moren" type="text" name="email" id="youxiang" />
+<p id="mail_houzhui" class="xz_mail"></p>
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01">联系电话：</li>
+<li class="l pl_10">
+<input class="input_moren" type="text" name="tel" />
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01">通讯地址：</li>
+<li class="guojia pl_10 l">
+<select id="dizhi_1" name="guojia">
+<option value="" selected>-国家-</option>
+<option value="美国">美国</option>
+<option value="朝鲜">朝鲜</option>
+<option value="俄罗斯">俄罗斯</option>
+<option value="中国">中国</option>
+<option value="美国">美国</option>
+<option value="朝鲜">朝鲜</option>
+<option value="俄罗斯">俄罗斯</option>
+<option value="俄罗斯">俄罗斯</option>
+<option value="中国">中国</option>
+<option value="美国">美国</option>
+<option value="朝鲜">朝鲜</option>
+<option value="俄罗斯">俄罗斯</option>
+</select>
+</li>
+<li class="guojia pl_10 l">
+<select id="dizhi_2" name="shengfen">
+<option value="-省市-" selected>-省份-</option>
+<option value="美国">北京</option>
+<option value="朝鲜">上海</option>
+<option value="俄罗斯">天津</option>
+<option value="美国">北京</option>
+<option value="朝鲜">上海</option>
+<option value="俄罗斯">天津</option>
+</select>
+</li>
+<li class="guojia pl_10 l">
+<select id="dizhi_3" name="chengshi">
+<option value="-城市-" selected>-城市-</option>
+<option value="美国">朝阳区</option>
+<option value="朝鲜">海淀区</option>
+<option value="俄罗斯">丰台区</option>
+<option value="中国">昌平区</option>
+<option value="美国">朝阳区</option>
+<option value="朝鲜">海淀区</option>
+<option value="俄罗斯">丰台区</option>
+<option value="中国">昌平区</option>
+</select>
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01">验证码：</li>
+<li class="pl_10 l"><input type="text" class="input_moren" style="width:150px;" name="yzm" /></li>
+<li class="l pl_10"><img src="images/yzm.png" class="yzm" /></li>
+<li class="l yzmwz pl_10"><a href="#">看不清？换一换</a></li>
+</ul>
+<ul class="mt12">
+<li class="li_01">&nbsp;</li>
+<li id="xieyixinxi" class="xieyi l pl_5">
+<p>
+<input type="checkbox" value="1" name="agree" /><label>同意</label><a href="#">创驿网会员认证服务条款</a>
+</p>
+</li>
+</ul>
+<ul class="mt30 pb_50">
+<li class="li_01">&nbsp;</li><li class="l pl_5"><input type="submit" class="zhuce" value="注册" /></li>
+</ul>
+</div>
+</form>
+</div>
+<div class="clear"></div>
+</div>
+<!--内容结束版权开始-->
+<div class="width_100bfb">
+<div class="footer_01">
+<p class="f12 p_01"><a href="#">法律声明</a>\<a href="#">关于我们</a>\<a href="#">联系我们</a>\<a href="#">意见反馈</a></p>
+<p class="f10">Copyright©2005-2014 YIZHAN.CN All Rights Reserved 创驿网</p>
+<p class="f10">京ICP证080047号[京ICP备08010314号-6] 文网文[2009]024号 新出网证（京）字069号 京公网安备110000000006号 工商营业执照</p>
+</div>
+<div class="clear"></div>
+</div>
+<!--返回顶部-->
+<div id="fanhui_top">
+<ul>
+<li id="fanhui_top_02">
+<a id="totop" title="返回顶部"></a>
+</li>
+</ul>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/form_yz.js"></script>
+<script>
+//表单验证
+		$(function(){
+			var options_array2 = [
+				{notnull:"用户名",name:"user_name",type:"text",focusMsg:'数字和英文及下划线和.的组合，开头为字母，4-20个字符'},
+				{notnull:"密码",name:"password",type:'password',simple:"密码错误",focusMsg:'最小长度:6 最大长度:16'},
+				{notnull:"密码",name:"confirm_password",type:'eq',simple:"二次密码不同",to:'password',focusMsg:'请再输入一遍您上面填写的密码'},
+				{notnull:"邮箱",name:"email",type:"mail",simple:"邮箱错误",focusMsg:'请填写真实并且最常用的邮箱'},
+				{notnull:"汉字",name:"real_name",type:"chn",focusMsg:'必须填写汉字'},
+				{notnull:"验证码",name:"yzm",type:"text",simple:"请输入验证码"},
+				{notnull:"手机号",name:"tel",type:"telephone",focusMsg:'请填写有效的手机号码'},
+				{notnull:"国家",name:"guojia",simple:"国家"},
+				{notnull:"省",name:"shengfen",simple:"省"},
+				{notnull:"市",name:"chengshi",simple:"城市"},
+				{notnull:"协议", name:"agree",message:"请先确定已阅读并完全同意条款内容。"}
+			];
+			$("#reg_form").valid({
+				items:options_array2
+			});
+		});
+</script>

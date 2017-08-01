@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>创驿网——中关村核心区协同创新服务平台</title>
+<script type="text/javascript" src="js/jquery1_11_1min.js"></script>
+<script type="text/javascript" src="js/gongxiang.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6png.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="wid_1000px">
+<div class="top_div_02 l">
+<ul>
+<div class="title"><img src="images/logo_02.png" /></div>
+<div class="sm_nav">
+<ul>
+<li><a href="javascript:void(0);" onclick="tanchu_login('login_01','login_02')">登录</a></li>
+<li><a href="reg.html">注册</a></li>
+<li><a href="user_center.html" class="xlcd">我的创驿</a>
+<ul>
+<p class="p_01">
+<a href="user_01.html">主人态</a>
+<a href="user_keren.html">客人态</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿客服</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿导航</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--LOGO和搜索等-->
+<div class="wid_1000px">
+<div class="header_nr2">
+<div class="lgoo">&nbsp;</div>
+<div class="header_search">
+<form action="搜索结果.html">
+<li class="li_01">
+<input type="text" name="search" class="input_text" onblur="if(this.value=='') this.value='请输入查询内容';this.parentNode.className='li_01';" onfocus="this.parentNode.className='li_02';if(this.value=='请输入查询内容') this.value='';" value="请输入查询内容" />
+</li>
+<li class="r">
+<input type="button" class="button f16 r" value="" />
+</li>
+</form>
+</div>
+<div class="header_erweima"><img src="images/erweima.png" /><span style="height:30px; line-height:30px;">&nbsp;</span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="wid_1000px">
+<div class="logo_01"><a href="#"><img src="images/logo_01.png" /></a></div>
+<div class="nav_dh01" style="width:846px; margin-top:5px;">
+<ul class="l">
+<a href="#" class="this">创驿首页</a>
+<a href="zsycs.html" class="moren">找实验场所</a>
+<a href="zhaozhuanjia.html" class="moren">找专家咨询</a>
+<a href="找服务机构.html" class="moren">找服务机构</a>
+<a href="找技术成果.html" class="moren">找技术成果</a>
+<a href="news_xx.html" class="moren">找信息资讯</a>
+<a href="zhidingfuwu.html" class="moren">找定制服务</a>  </ul>
+<ul class="r"><img src="images/cysq.png" class="cysq" /></ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--头部结束-->
+<div class="wid_1000px">
+<script type="text/javascript">
+$(document).ready(function(){
+			var index_leftcd01=function(){
+			var index_leftcd02=$(".top_left_01 .ul_01");//选择导航列表
+				index_leftcd02.each(function(){
+					var index_leftcd03=$(this).index();//获取当前选择菜单列表的索引
+					$(this).mouseenter(function(){
+						//var y = $(this).position().top+1;//获取当前鼠标滑过的列表的顶部坐标
+						$(".top_left_02").show();
+						//$(".top_left_02").css("top",y);//需要显示的对应索引内容
+						$(this).addClass("mouse_bg").siblings().removeClass("mouse_bg");
+						$(".top_left_02>div").eq(index_leftcd03).show().siblings().hide();
+					});
+				});
+				$(".top_left_01").mouseleave(function(){
+					$(".top_left_02").hide();
+					menuItem.removeClass("mouse_bg");
+				})
+			}//展开二级菜单	
+			index_leftcd01();//执行展开二级菜单函
+});
+</script>
+<div class="top_left_01">
+<ul class="ul_01"><a href="#" class="zsycs">找实验场所</a></ul>
+<ul class="ul_01" id="btnFadeout"><a href="#" class="zzjzx">找专家咨询</a></ul>
+<ul class="ul_01"><a href="#" class="zfwjg">找服务机构</a></ul>
+<ul class="ul_01"><a href="#" class="zjscg">找技术成果</a></ul>
+<ul class="ul_01"><a href="#" class="zxxzx">找信息资讯</a></ul>
+<ul class="ul_01"><a href="#" class="zdzfw">找定制服务</a></ul>
+<ul class="ul_02">
+<li><a href="#" class="xqdj">需求登记</a></li>
+<li><a href="#" class="jgjm">机构加盟</a></li>
+<li><a href="#" class="jyba">交易备案</a></li>
+<li><a href="#" class="cxjsl">创新劵申领</a></li>
+</ul>
+<div class="top_left_02">
+<div class="top_left_03">11111</div>
+<div class="top_left_03">2222</div>
+<div class="top_left_03">333333</div>
+<div class="top_left_03">444444</div>
+<div class="top_left_03">555555</div>
+<div class="top_left_03">6666</div>
+</div>
+</div>
+<!--左边结束右边开始-->
+<style type="text/css">
+.lshdt_01{width:180px; height:56px; position:absolute; z-index:100; top:270px; left:190px;}
+.lshdt_02{width:216px; height:29px; position:absolute; z-index:100; top:270px; left:140px;}
+.lshdt_03{width:182px; height:29px; position:absolute; z-index:100; top:270px; left:190px;}
+</style>
+<div class="index_hdp01">
+<div id="index_jtd01" class="index_hdp02">
+<div id="index_jtd02" class="index_hdp05"></div>
+<div id="index_jtd03" class="index_hdp06"></div>	
+<div class="index_hdp03">
+<ul>
+<li>
+<a href="#" target="_blank" >
+<img src="images/6.jpg" />
+</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#" target="_blank" >
+<img src="images/1.jpg" />
+</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="images/2.jpg" />
+<a href="#" class="lshdt_01" target="_blank"><img src="images/2_1.png" style="width:180px; height:56px;" /></a>
+<a href="#" class="lshdt_01" target="_blank" style="left:380px;"><img src="images/2_2.png" style="width:180px; height:56px;" /></a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="images/3.jpg" /><a href="#" style="width:180px; height:40px; position:absolute; z-index:100; top:195px; left:290px; text-decoration:none;">&nbsp;</a>
+<a href="#" style="width:180px; height:40px; position:absolute; z-index:100; top:195px; left:490px; text-decoration:none;">&nbsp;</a>
+</li>
+</ul>
+<ul><li><a href="#" ><img src="images/d4.jpg" /></a></li></ul>
+<ul><li><a href="#" ><img src="images/5.jpg" /></a></li></ul>
+</ul>
+</div>
+<div id="index_jtd04" class="index_hdp04" data="6">
+<ul>
+<span class="hdp_moren hdp_this"></span>
+<span class="hdp_moren"></span>
+<span class="hdp_moren"></span>
+<span class="hdp_moren"></span>
+<span class="hdp_moren"></span>
+<span class="hdp_moren"></span>
+</ul>	
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+//参数说明依次是：当前选择总DIV背景和当前按钮默认样式，总DIV下面每个图片，左边按钮，右边按钮，总DIVID
+var index_hdpxx = $("#index_jtd04").attr("data");
+huandengpian('index_jtd04 .hdp_moren','index_jtd01 ul','index_jtd02','index_jtd03','index_jtd01','ul',index_hdpxx);
+});
+</script>
+<div class="clear"></div>
+</div>
+<!--信息和动态-->
+<div class="wid_1000px">
+<div class="index_jigou yinying mt12">
+<div class="index_xinxi dbd_xhx"><li class="title">机构推介</li>
+<li class="zyxx">
+<span id="this_jgtj" class="shuzi">1</span><span class="shuzi">/</span><span id="gong_jgtj" class="shuzi"></span>
+<span class="left" id="left_jgtj"></span><span class="right" id="right_jgtj"></span>
+</li>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){ 
+gong_hdp01('jgtj','jgtj .index_tuijie02 .index_jigou_01','left_jgtj','right_jgtj','jgtj .index_tuijie02','this_jgtj','gong_jgtj'); 
+}); 
+</script>
+<div class="index_tuijie01" id="jgtj">
+<div class="index_tuijie02">
+<div class="index_jigou_01">
+<ul class="ul_02">
+<li class="dy_dd li_01"><a href="#">路浩知识产权联盟</a></li>
+<li class="dy_dd li_02"><a href="#">“创驿在行动”之中韩通信电子行业技术交流</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村海淀园搭建协同创新服务平台</a></li>
+</ul>
+<ul class="ul_01"><img src="images/ad_03.png" /></ul>
+</div>
+<div class="index_jigou_01">
+<ul class="ul_02">
+<li class="dy_dd li_01"><a href="#">路浩知识产权联盟</a></li>
+<li class="dy_dd li_02"><a href="#">“创驿在行动”之中韩通信电子行业技术交流</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村海淀园搭建协同创新服务平台</a></li>
+</ul>
+<ul class="ul_01"><img src="images/ad_03.png" /></ul>
+</div>
+</div>
+</div>
+
+</div>
+<div class="index_xxkd yinying mt12">
+<div class="index_xinxi dbd_xhx"><li class="title">信息快递</li><li class="more"><a href="#">更多>></a></li></div>
+<ul class="ul_01">
+<li class="dy_dd"><a href="#">关于中关村国家自主创新示范区有限合伙制创业投资企业法人合伙人企业所得税试点政策的通知</a></li>
+<li class="dy_dd"><a href="#">国务院办公厅关于加快新能源汽车推广应用的指导意见</a></li>
+<li class="dy_dd"><a href="#">中关村知识产权促进局关于申报2015年度示范园区专利战略专项资金的通知</a></li>
+<li class="dy_dd"><a href="#">关于“4G工程”后补贴专项项目征集工作的通知</a></li>
+<li class="dy_dd"><a href="#">国家保密局科学技术研究所恶意代码样本存储与管理采购项目招标公告</a></li>
+<li class="dy_dd"><a href="#">第十六届中国（北京）国际气体技术、设备与应用展览会</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--机构推介驿站导航-->
+<div class="wid_1000px">
+<div class="index_yzdh yinying mt12">
+<div class="div_01">
+<div class="index_xinxi dbd_xhx"><li class="title">驿站导航</li>
+<li class="zyxx">
+<span id="this_yz" class="shuzi">1</span><span class="shuzi">/</span><span id="gong_yz" class="shuzi"></span>
+<span class="left" id="left_yz"></span><span class="right" id="right_yz"></span>
+</li>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){ 
+gong_hdp01('yizdh','yizdh .index_yzdhul .ul_01','left_yz','right_yz','yizdh .index_yzdhul','this_yz','gong_yz'); 
+}); 
+</script>
+<div class="index_yzdhdiv" id="yizdh">
+<div class="index_yzdhul">
+<ul class="ul_01">
+<li class="li_01"><a href="#"><img src="images/xx_01.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_02.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_06.jpg" /></a></li>
+</ul>
+<ul class="ul_01">
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+</ul>
+<ul class="ul_01">
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+</ul>
+<ul class="ul_01">
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_03.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_05.jpg" /></a></li>
+<li class="li_01"><a href="#"><img src="images/xx_04.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="index_chengguo yinying mt12">
+<div class="index_xinxi dbd_xhx"><li class="title">成果展示 </li>
+<li class="zyxx">
+<span id="this_zs" class="shuzi">1</span><span class="shuzi">/</span><span id="gong_zs" class="shuzi"></span>
+<span class="left" id="left_xmzs"></span><span class="right" id="right_xmzs"></span>
+</li>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){ 
+gong_hdp01('index_chenguo','index_chenguo .index_chengguogd02 .index_chengguo01','left_xmzs','right_xmzs','index_chenguo .index_chengguogd02','this_zs','gong_zs'); 
+}); 
+</script>
+<div class="index_chengguogd01" id="index_chenguo">
+<div class="index_chengguogd02">
+<div class="index_chengguo01">
+<ul class="ul_02">
+<li class="dy_dd li_01"><a href="#">路浩知识产权联盟</a></li>
+<li class="dy_dd li_02"><a href="#">“创驿在行动”之中韩通信电子行业技术交流</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村海淀园搭建协同创新服务平台</a></li>
+</ul>
+<ul class="ul_01"><img src="images/ad_04.png" /></ul>
+</div>
+<div class="index_chengguo01">
+<ul class="ul_02">
+<li class="dy_dd li_01"><a href="#">路浩知识产权联盟</a></li>
+<li class="dy_dd li_02"><a href="#">“创驿在行动”之中韩通信电子行业技术交流</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村海淀园搭建协同创新服务平台</a></li>
+</ul>
+<ul class="ul_01"><img src="images/ad_04.png" /></ul>
+</div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<!--海外来风项目展示-->
+<div class="wid_1000px">
+<div class="index_dongtai01 yinying mt12">
+<div class="index_xinxi dbd_xhx"><li class="title">创驿动态</li><li class="more"><a href="#">更多>></a></li>
+</div>
+<div class="index_xiangmu02">
+<ul class="ul_02">
+<li class="dy_dd li_02"><a href="#">“创驿在行动”之中韩通信电子行业技术交流</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村海淀园搭建协同创新服务平台</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+</ul>
+<ul class="ul_01"><img src="images/ad_03.png" /></ul>
+</div>
+</div>
+<div class="index_hwlf yinying mt12">
+<div class="index_xinxi dbd_xhx"><li class="title">海外来风</li>
+<li class="zyxx">
+<span id="this_lf" class="shuzi">1</span><span class="shuzi">/</span><span id="gong_lf" class="shuzi"></span>
+<span class="left" id="left_laifeng"></span><span class="right" id="right_laifeng"></span>
+</li>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){ 
+gong_hdp01('haiwailaifeng','haiwailaifeng .index_hwlful .ul_01','left_laifeng','right_laifeng','haiwailaifeng .index_hwlful','this_lf','gong_lf'); 
+}); 
+</script>
+<div class="index_hwlfdiv" id="haiwailaifeng">
+<div class="index_hwlful">
+<ul class="ul_01">
+<li class="dy_dd li_01"><a href="#">“路浩知识产权联盟</a></li>
+<li class="dy_dd li_02"><a href="#">“创驿在行动”之中韩通信电子行业技术交流</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+</ul>
+<ul class="ul_01">
+<li class="dy_dd li_01"><a href="#">“路浩知识产权联盟</a></li>
+<li class="dy_dd li_02"><a href="#">储能系统能量转换控制技术研讨”主题沙龙顺利召开</a></li>
+<li class="dy_dd li_02"><a href="#">创驿网—开创资源共享与协同创新新局面</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+<li class="dy_dd li_02"><a href="#">中关村核心区协同创新服务平台座谈会议召开</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<!--友情链接开始-->
+<div class="wid_1000px">
+<div class="links_div yinying mt12">
+<div class="links_01">
+<ul class="ul_01">合作伙伴</ul>
+<ul class="ul_02">
+<li class="this" id="tab_bq0" onclick="tab_hanshu('tab_bq','gdnr',0,5)">服务平台</li>
+<li class="moren" id="tab_bq1" onclick="tab_hanshu('tab_bq','gdnr',1,5)">高校院所</li>
+<li class="moren" id="tab_bq2" onclick="tab_hanshu('tab_bq','gdnr',2,5)">服务机构</li>
+<li class="moren" id="tab_bq3" onclick="tab_hanshu('tab_bq','gdnr',3,5)">行业协会</li>
+<li class="moren" id="tab_bq4" onclick="tab_hanshu('tab_bq','gdnr',4,5)">政府机关</li>
+</ul>
+</div>
+<div class="links_02" id="gdnr0">
+<a href="#"><img src="images/logo_1.png" /></a><a href="#"><img src="images/logo_2.png" /></a>
+<a href="#"><img src="images/logo_3.png" /></a><a href="#"><img src="images/logo_4.png" /></a>
+<a href="#"><img src="images/logo_5.png" /></a><a href="#"><img src="images/logo_6.png" /></a>
+<a href="#"><img src="images/logo_7.png" /></a><a href="#"><img src="images/logo_8.png" /></a>
+<a href="#"><img src="images/logo_9.png" /></a><a href="#"><img src="images/logo_10.png" /></a>
+<a href="#"><img src="images/logo_11.png" /></a><a href="#"><img src="images/logo_12.png" /></a>
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_17.png" /></a><a href="#"><img src="images/logo_18.png" /></a>
+</div>
+<div class="links_02" id="gdnr1" style="display:none;">
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_7.png" /></a><a href="#"><img src="images/logo_8.png" /></a>
+<a href="#"><img src="images/logo_9.png" /></a><a href="#"><img src="images/logo_10.png" /></a>
+<a href="#"><img src="images/logo_11.png" /></a><a href="#"><img src="images/logo_12.png" /></a>
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_17.png" /></a><a href="#"><img src="images/logo_18.png" /></a>
+<a href="#"><img src="images/logo_19.png" /></a><a href="#"><img src="images/logo_20.png" /></a>
+<a href="#"><img src="images/logo_21.png" /></a><a href="#"><img src="images/logo_22.png" /></a>
+</div>
+<div class="links_02" id="gdnr2" style="display:none;">
+<a href="#"><img src="images/logo_1.png" /></a><a href="#"><img src="images/logo_2.png" /></a>
+<a href="#"><img src="images/logo_3.png" /></a><a href="#"><img src="images/logo_4.png" /></a>
+<a href="#"><img src="images/logo_5.png" /></a><a href="#"><img src="images/logo_6.png" /></a>
+<a href="#"><img src="images/logo_7.png" /></a><a href="#"><img src="images/logo_8.png" /></a>
+<a href="#"><img src="images/logo_9.png" /></a><a href="#"><img src="images/logo_10.png" /></a>
+<a href="#"><img src="images/logo_11.png" /></a><a href="#"><img src="images/logo_12.png" /></a>
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_17.png" /></a><a href="#"><img src="images/logo_18.png" /></a>
+</div>
+<div class="links_02" id="gdnr3" style="display:none;">
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_7.png" /></a><a href="#"><img src="images/logo_8.png" /></a>
+<a href="#"><img src="images/logo_9.png" /></a><a href="#"><img src="images/logo_10.png" /></a>
+<a href="#"><img src="images/logo_11.png" /></a><a href="#"><img src="images/logo_12.png" /></a>
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_17.png" /></a><a href="#"><img src="images/logo_18.png" /></a>
+<a href="#"><img src="images/logo_19.png" /></a><a href="#"><img src="images/logo_20.png" /></a>
+<a href="#"><img src="images/logo_21.png" /></a><a href="#"><img src="images/logo_22.png" /></a>
+</div>
+<div class="links_02" id="gdnr4" style="display:none;">
+<a href="#"><img src="images/logo_1.png" /></a><a href="#"><img src="images/logo_2.png" /></a>
+<a href="#"><img src="images/logo_3.png" /></a><a href="#"><img src="images/logo_4.png" /></a>
+<a href="#"><img src="images/logo_5.png" /></a><a href="#"><img src="images/logo_6.png" /></a>
+<a href="#"><img src="images/logo_7.png" /></a><a href="#"><img src="images/logo_8.png" /></a>
+<a href="#"><img src="images/logo_9.png" /></a><a href="#"><img src="images/logo_10.png" /></a>
+<a href="#"><img src="images/logo_11.png" /></a><a href="#"><img src="images/logo_12.png" /></a>
+<a href="#"><img src="images/logo_14.jpg" /></a><a href="#"><img src="images/logo_15.png" /></a>
+<a href="#"><img src="images/logo_17.png" /></a><a href="#"><img src="images/logo_18.png" /></a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<!--内容结束版权开始-->
+<div class="width_100bfb">
+<div class="footer_01">
+<p class="f12 p_01"><a href="#">法律声明</a>\<a href="#">关于我们</a>\<a href="#">联系我们</a>\<a href="#">意见反馈</a></p>
+<p class="f10">Copyright©2005-2014 YIZHAN.CN All Rights Reserved 创驿网</p>
+<p class="f10">京ICP证080047号[京ICP备08010314号-6] 文网文[2009]024号 新出网证（京）字069号 京公网安备110000000006号 工商营业执照</p>
+</div>
+<div class="clear"></div>
+</div>
+<!--返回顶部-->
+<div id="fanhui_top">
+<ul>
+<li id="fanhui_top_02">
+<a id="totop" title="返回顶部"></a>
+</li>
+</ul>
+</div>
+<!--弹出登录框-->
+<div id="login_01" class="tanchu_divzz"></div>
+<div id="login_02" class="denglu_div01 yinying2">
+<div class="denglu_div02">
+<ul class="denglu_div03">
+<li class="this" id="login_bq0" onclick="tab_hanshu('login_bq','login_nr',0,3)">用户名登录</li>
+<li class="moren" id="login_bq1" onclick="tab_hanshu('login_bq','login_nr',1,3)">邮箱登录</li>
+<li class="moren" id="login_bq2" onclick="tab_hanshu('login_bq','login_nr',2,3)">手机登录</li>
+</ul>
+<ul class="denglu_div04" title="关闭窗口" onclick="guanbi_div('login_01','login_02')"></ul>
+</div>
+<div class="denglu_div05" id="login_nr0">
+<form>
+<ul class="ul_01">
+<li class="li_01">亲爱的朋友，欢迎回到创驿网^ - ^</li>
+</ul>
+<ul class="ul_01 mt5">
+<input type="text" class="input_moren" onblur="if(this.value=='') this.value='请输入用户名'" onfocus="if(this.value=='请输入用户名') this.value='';" value="请输入用户名" />
+</ul>
+<ul class="ul_01 mt20">
+<input type="text" class="input_moren" id="pswd_01" value="密码" />
+</ul>
+<ul class="ul_01 mt20">
+<li class="l"><input type="text" class="input_moren" style="width:115px;" onblur="if(this.value=='') this.value='验证码'" onfocus="if(this.value=='验证码') this.value='';" value="验证码" /></li>
+<li class="l pl_10"><img src="images/yzm.png" class="yzm" /></li>
+<li class="l yzmwz pl_10"><a href="#">换一张</a></li>
+</ul>
+<ul class="ul_01 mt20"><input type="submit" class="denglu" value="登录" /></ul>
+<ul class="ul_01 wjmm"><a href="user_mima.html" class="pr_5">忘了密码？</a>|<a href="reg.html" class="pl_5">注册新帐号</a></ul>
+</form>
+</div>
+<div class="denglu_div05" id="login_nr1" style="display:none;">
+<form>
+<ul class="ul_01">
+<li class="li_01">亲爱的朋友，欢迎回到创驿网^ - ^</li>
+</ul>
+<ul class="ul_01 mt5">
+<input type="text" class="input_moren" onblur="if(this.value=='') this.value='请输入邮箱'" onfocus="if(this.value=='请输入邮箱') this.value='';" value="请输入邮箱" />
+</ul>
+<ul class="ul_01 mt20">
+<input type="text" class="input_moren" id="pswd_02" value="密码" />
+</ul>
+<ul class="ul_01 mt20">
+<li class="l"><input type="text" class="input_moren" style="width:115px;" onblur="if(this.value=='') this.value='验证码'" onfocus="if(this.value=='验证码') this.value='';" value="验证码" /></li>
+<li class="l pl_10"><img src="images/yzm.png" class="yzm" /></li>
+<li class="l yzmwz pl_10"><a href="#">换一张</a></li>
+</ul>
+<ul class="ul_01 mt20"><input type="submit" class="denglu" value="登录" /></ul>
+<ul class="ul_01 wjmm"><a href="user_mima.html" class="pr_5">忘了密码？</a>|<a href="reg.html" class="pl_5">注册新帐号</a></ul>
+</form>
+</div>
+<div class="denglu_div05" id="login_nr2" style="display:none;">
+<form>
+<ul class="ul_01">
+<li class="li_01">亲爱的朋友，欢迎回到创驿网^ - ^</li>
+</ul>
+<ul class="ul_01 mt5">
+<input type="text" class="input_moren" onblur="if(this.value=='') this.value='请输入手机号'" onfocus="if(this.value=='请输入手机号') this.value='';" value="请输入手机号" />
+</ul>
+<ul class="ul_01 mt20">
+<input type="text" class="input_moren" id="pswd_03" value="密码" />
+</ul>
+<ul class="ul_01 mt20">
+<li class="l"><input type="text" class="input_moren" style="width:115px;" onblur="if(this.value=='') this.value='验证码'" onfocus="if(this.value=='验证码') this.value='';" value="验证码" /></li>
+<li class="l pl_10"><img src="images/yzm.png" class="yzm" /></li>
+<li class="l yzmwz pl_10"><a href="#">换一张</a></li>
+</ul>
+<ul class="ul_01 mt20"><input type="submit" class="denglu" value="登录" /></ul>
+<ul class="ul_01 wjmm"><a href="user_mima.html" class="pr_5">忘了密码？</a>|<a href="reg.html" class="pl_5">注册新帐号</a></ul>
+</form>
+</div>
+<script>
+$("#pswd_01,#pswd_02,#pswd_03").focus(function(){  
+   $(this).attr('type','password');  
+});  
+</script>
+</div>
+<!--弹出登录框结束-->
+<div style="position:fixed; top:100px; left:50%; margin-left:530px;"><a href="#"><img src="images/right_ad01.jpg" /></a></div>
+</body>
+</html>

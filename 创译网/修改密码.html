@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改密码</title>
+<script type="text/javascript" src="js/jquery1_11_1min.js"></script>
+<script type="text/javascript" src="js/gongxiang.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/ie6png.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/user.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="width_100bfb">
+<div class="top_div l">
+<ul>
+<div class="title2">中关村协同创新服务平台</div>
+<div class="sm_nav">
+<ul>
+<li><a href="javascript:void(0);">登录</a></li>
+<li><a href="reg.html">注册</a></li>
+<li><a href="user_center.html" class="xlcd">我的创驿</a>
+<ul>
+<p class="p_01">
+<a href="user_01.html">主人态</a>
+<a href="user_keren.html">客人态</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿客服</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);" class="xlcd">创驿导航</a>
+<ul>
+<p class="p_01">
+<a href="#">咨询定制</a>
+<a href="#">咨询资源</a>
+</p>
+<p class="p_02"></p>
+</ul>
+</li>
+<li><a href="javascript:void(0);">收藏创驿</a></li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<!--LOGO和搜索等-->
+<div class="wid_1000px">
+<div class="header_nr">
+<div class="lgoo"><a href="index.html"><img src="images/logo.png" /></a></div>
+<div class="header_search">
+<form>
+<li class="li_01">
+<input type="text" class="input_text" onblur="if(this.value=='') this.value='请输入查询内容';this.parentNode.className='li_01';" onfocus="this.parentNode.className='li_02';if(this.value=='请输入查询内容') this.value='';" value="请输入查询内容" />
+</li>
+<li class="r">
+<input type="button" class="button f16 r" value="" />
+</li>
+</form>
+</div>
+<div class="header_erweima"><img src="images/erweima.png" /><span></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--头部结束内容开始-->
+<div class="wid_1000px">
+<div class="user_nr01">
+<li><a href="#" class="this">我的主页</a></li><li><a href="#">个人资料</a></li><li><a href="#">帮助</a></li>
+</div>
+<div class="clear"></div>
+</div>
+<div class="wid_1000px">
+<div class="user_nr02">
+<div class="width_100bfb01">
+<div class="user_tx01">
+<ul class="ul_01" onmouseover="gong_show('xgzl_id')" onMouseOut="gong_hide('xgzl_id')">
+<img src="images/ad_06.png" />
+<a href="javascript:void(0);" onclick="tanchu_login('touxiang_01','touxiang_02')" class="xgzl" id="xgzl_id">修改头像</a>
+</ul>
+<ul class="ul_02">
+<li class="li_01"><p>伊伊能靜能靜能</p><span></span><!--企业认证<span class="this"></span>--></li>
+<li class="li_02 mt15"><b class="ico_01"></b>To be or not to be , that's a question .</li>
+<li class="li_02"><b class="ico_02"></b>单身，1999年9月9日，射手座</li>
+<li class="li_02"><b class="ico_03"></b>现居：北京市，朝阳区</li>
+<li class="li_03">
+<p class="p_01">资料完成度：</p>
+<p class="p_02"><span class="wcbfb">30%</span><span class="wcbl" style="width:30%;"></span></p>
+<p class="wszlxx"><a href="user_keren.html">完善资料>></a></p>
+</li>
+</ul>
+</div>
+<div class="user_rzztxx01">
+<ul class="ul_01 zhuangtai"><li class="wdzd">他的状态:</li><li class="shz">审核中</li></ul>
+</div>
+</div>
+<div class="user_beian01">
+<li class="li_01" style="height:50px; line-height:50px; padding-bottom:0px; width:100px; text-align:center; border:1px solid #dbdbdb; border-bottom:0px; border-right:0px;"><a href="user_keren.html" style="height:50px; line-height:50px; float:left; width:100px; text-align:center;">我的资料</a></li>
+<li class="li_01" style="background:#ececec; height:50px; line-height:50px; padding-bottom:0px; width:100px; text-align:center; border:1px solid #dbdbdb; border-bottom:0px;"><a href="修改密码.html" style="height:50px; line-height:50px; float:left; width:100px; text-align:center;">修改密码</a></li>
+</div>
+<form>
+<div class="user_reg03" style="margin-top:10px; padding-left:26px;">
+<ul class="mt12">
+<li class="li_01" style="width:80px; text-align:left;">原来密码：</li>
+<li class="l pl_10">
+<input class="input_moren" type="text" />
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01" style="width:80px; text-align:left;">新的密码：</li>
+<li class="l pl_10">
+<input class="input_moren" type="text" />
+</li>
+</ul>
+<ul class="mt12">
+<li class="li_01" style="width:80px; text-align:left;">确认密码：</li>
+<li class="l pl_10">
+<input class="input_moren" type="text" />
+</li>
+</ul>
+<ul class="mt30 pb_50">
+<li class="li_01" style="width:80px;">&nbsp;</li><li class="l pl_5"><input type="submit" class="zhuce" value="修改密码" /></li>
+</ul>
+</div>
+</form>
+</div>
+<div class="clear"></div>
+</div>
+<!--内容结束版权开始-->
+<div class="width_100bfb">
+<div class="footer_01">
+<p class="f12 p_01"><a href="#">法律声明</a>\<a href="#">关于我们</a>\<a href="#">联系我们</a>\<a href="#">意见反馈</a></p>
+<p class="f10">Copyright©2005-2014 YIZHAN.CN All Rights Reserved 创驿网</p>
+<p class="f10">京ICP证080047号[京ICP备08010314号-6] 文网文[2009]024号 新出网证（京）字069号 京公网安备110000000006号 工商营业执照</p>
+</div>
+<div class="clear"></div>
+</div>
+<!--返回顶部-->
+<div id="fanhui_top">
+<ul>
+<li id="fanhui_top_02">
+<a id="totop" title="返回顶部"></a>
+</li>
+</ul>
+</div>
+<!--弹出修改头像-->
+<style type="text/css">
+.pic_mingcheng{display:none;}
+</style>
+<div id="touxiang_01" class="tanchu_divzz"></div>
+<div id="touxiang_02" class="touxiang_xg01">
+<form action="">
+<div class="touxiang_xg02"><li class="guanbi" title="关闭窗口" onclick="guanbi_div('touxiang_01','touxiang_02')"></li></div>
+<div class="touxiang_xg03">请上传头像哦^ ^</div>
+<div class="width_100bfb01">
+<div class="touxiang_xg04">
+<ul>
+<input type="button" class="sctx_user" id="del_tx" onclick="del_yuansu()" value="删除头像" style="display:none; position:absolute; left:65px; top:60px; z-index:100000000;" />
+<input type="button" class="sctx_user" id="shangchuantouxiang" value="上传头像" style="margin-top:60px;"/>
+<span class="shuoming" style="float:none; position:absolute; left:10px; top:110px; z-index:100000000;">仅支持jpg，jpge，gif，bmp，<br />png格式，最大文件量4mb</span>
+</ul>
+</div>
+<div class="touxiang_xg05">
+<div class="touxiang_xg06">
+<ul class="datu" id="iedatu_180"></ul>
+<ul class="shuoming">大尺寸180*180<br />请注意中小尺寸头像是否清晰</ul>
+</div>
+<!--大图结束-->
+<div class="touxiang_xg07">
+<ul class="zhongtu" id="iedatu_50"></ul>
+<ul class="shuoming">50*50</ul>
+<ul class="xiaotu" id="iedatu_24"></ul>
+<ul class="shuoming">24*24</ul>
+</div>
+<!--中图小图结束-->
+</div>
+
+</div>
+<div class="touxiang_xg08">
+<input type="button" value="保存"  id="upload_btn" class="tijiao baocun" onclick="guanbi_div('touxiang_01','touxiang_02');chenggongtishi()" />
+<input type="button" value="取消" class="tijiao quxiao ml_10" onclick="guanbi_div('touxiang_01','touxiang_02')" />
+</div>
+</form>
+<script src="js/plupload.full.min.js"></script>
+<script>
+function del_yuansu()
+{
+$("#shangchuantouxiang").show();
+$("#del_tx").hide();
+$("#iedatu_180").empty();
+$("#iedatu_50").empty();
+$("#iedatu_24").empty();
+}
+  var uploader = new plupload.Uploader({ //实例化一个plupload上传对象
+    runtimes : 'html5,flash,silverlight,html4',
+    browse_button : 'shangchuantouxiang',
+    url : 'user/plupload',
+    flash_swf_url : 'js/Moxie.swf',
+    silverlight_xap_url : '/js/Moxie.xap',
+    resize : { width : 180, height : 180, quality : 90 , crop: true },
+    filters: {
+      max_file_size : '4mb',
+      mime_types : [ //只允许上传图片文件
+        { title : "图片文件", extensions : "jpg,jpeg,png" }
+      ]
+    }
+  });
+  uploader.init(); //初始化
+  //绑定文件添加进队列事件
+  uploader.bind('FilesAdded',function(uploader,files){
+     $("#shangchuantouxiang").hide();
+     $("#del_tx").show();
+    for(var i = 0, len = files.length; i<len; i++){
+      var file_name = files[i].name; //文件名
+      //构造html来更新UI
+      var html = '<li id="file-' + files[i].id +'" class="pic_mingcheng"><p>' + file_name + '</p></li>';
+      $(html).appendTo('.touxiang_xg05');
+      !function(i){
+        previewImage(files[i],function(imgsrc){
+          $('#iedatu_180').append('<img src="'+ imgsrc +'" />');
+          $('#iedatu_50').append('<img src="'+ imgsrc +'" />');
+          $('#iedatu_24').append('<img src="'+ imgsrc +'" />');
+        })
+        }(i);
+    }
+  });
+  //plupload中为我们提供了mOxie对象
+  //如果你不想了解那么多的话，那就照抄本示例的代码来得到预览的图片吧
+  function previewImage(file,callback){//file为plupload事件监听函数参数中的file对象,callback为预览图片准备完成的回调函数
+    if(!file || !/image\//.test(file.type)) return; //确保文件是图片
+    if(file.type=='image/gif'){//gif使用FileReader进行预览,因为mOxie.Image只支持jpg和png
+      var fr = new mOxie.FileReader();
+      fr.onload = function(){
+        callback(fr.result);
+        fr.destroy();
+        fr = null;
+      }
+      fr.readAsDataURL(file.getSource());
+    }else{
+      var preloader = new mOxie.Image();
+      preloader.onload = function() {
+        preloader.downsize( 300, 300 );//先压缩一下要预览的图片,宽300，高300
+        var imgsrc = preloader.type=='image/jpeg' ? preloader.getAsDataURL('image/jpeg',80) : preloader.getAsDataURL(); //得到图片src,实质为一个base64编码的数据
+        callback && callback(imgsrc); //callback传入的参数为预览图片的url
+        preloader.destroy();
+        preloader = null;
+      };
+      preloader.load( file.getSource() );
+    } 
+  }
+  //上传按钮
+  $('#upload_btn').click(function(){
+    uploader.start(); //开始上传
+  });
+  </script>
+</div>
+<!--修改成功提示-->
+<div id="touxiang_03" class="tanchu_divzz"></div>
+<div id="touxiang_04" class="chongg_tishi01">
+<div class="touxiang_xg02"><li class="guanbi" title="关闭窗口" onclick="guanbi_div('touxiang_03','touxiang_04')"></li></div>
+<div class="chongg_tishi02"><span class="icon_png"></span>恭喜，资料修改成功！</div>
+<div class="chongg_tishi03"><input type="button" class="sctx_user" value="我知道了" onclick="guanbi_div('touxiang_03','touxiang_04')" /></div>
+<script>
+function chenggongtishi()
+{
+tanchu_login('touxiang_03','touxiang_04');
+}
+</script>
+</div>
+</body>
+</html>
